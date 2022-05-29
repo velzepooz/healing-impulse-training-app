@@ -16,7 +16,7 @@ module.exports = {
     'brace-style': 'off',
     '@typescript-eslint/brace-style': ['error'],
     indent: 'off',
-    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/indent': ['error', 2, { SwitchCase: 1, ignoredNodes: ['PropertyDefinition'] }],
     'linebreak-style': 0,
     '@typescript-eslint/no-inferrable-types': 0,
     '@typescript-eslint/interface-name-prefix': 0,

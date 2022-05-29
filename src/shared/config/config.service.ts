@@ -63,6 +63,10 @@ class ConfigService implements ConfigServiceInterface {
     app.use(morgan('tiny'));
   }
 
+  getMongoDbConfig(): string {
+    return this.getValue('MONGO_URL');
+  }
+
   private getValue(key: string, throwOnMissing = true): string {
     const value = this.env[key];
 
